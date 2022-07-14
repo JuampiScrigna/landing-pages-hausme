@@ -1,0 +1,765 @@
+/*se establecen variables css*/
+
+:root {
+  --whiteBasic: #fff;
+  --purpleBasic: #3b0c88;
+  --purpleSoft: #7b68ee;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+
+
+/*-----------------------GENERALES---------------*/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: white;
+  padding: 0px;
+}
+
+h2 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  color: #3b0c88;
+  margin: 15px;
+  position: relative;
+}
+
+header {
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (min-width: 1000px){
+  header {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+main {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.subrayado {
+  text-decoration: underline;
+
+}
+
+/*Estilos de elementos internos del main*/
+
+.sectionMain h2 {
+  width: 70%;
+}
+
+#imgCuadradoAbsolute {
+  position: absolute;
+  top: 125px;
+  left: 52px;
+  width: 115px;
+  height: 40px;
+}
+
+/*los parrafos de las principales secciones tienen aplicados estos estílos*/
+.texto {
+  width: 85%;
+  margin: 0 0 0 15px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  margin: 15px;
+  color: #676767;
+}
+
+.sectionMain_part_two {
+  margin: 0 auto;
+  text-align: center;
+}
+
+/**/
+/* .h2_nuestroServicios {
+  position: relative;
+}
+
+.h2_nuestroServicios::before {
+  content: "";
+  width: 100px;
+  height: 2px;
+  background-color: #3b0c88;
+  position: absolute;
+  top: 30px;
+} */
+
+/**/
+.root {
+  margin: 20px auto;
+}
+
+/*elementos que tiene el "carrusel de imagenes"*/
+.scrolling-wrapper-flexbox {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+/*las tarjetas del carrusel de imagenes*/
+.tarjeta {
+  flex-basis: 150px;
+  flex-grow: 1;
+  flex-shrink: 2;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #dfdfdf;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 14px;
+}
+
+
+
+.dig {
+  border: 4px solid #706fe5;
+}
+
+/*.cir {
+  position: absolute;
+  z-index: -1;
+  top: 140vh;
+  margin-left: 370px;
+}*/
+
+.efecDer {
+  position: absolute;
+  z-index: index -1;
+  top: 130vh;
+  margin-left: 550px;
+}
+
+.efecIzq {
+  position: absolute;
+  z-index: -2;
+  top: 165vh;
+  margin-left: 0px;
+}
+
+.digitaliza {
+  position: relative;
+  z-index: 1;
+  top: 50vh;
+  margin-left: 30px;
+}
+
+
+
+
+
+
+
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner img {
+  width: 300px;
+  padding: 5px;
+  margin: 5px;
+  background-color: white;
+  padding: 10px;
+  display: flex;
+}
+
+
+
+/*-------Scroll Cards---------*/
+
+
+
+
+.cardImage {
+  margin: 0 auto;
+  text-align: center;
+  width: 100px;
+  height: 130px;
+}
+
+.cardImage img {
+  margin: 15px auto;
+}
+
+.cardText {
+  margin: 0 auto;
+  font-family: "Roboto";
+  font-style: SemiBold;
+  font-size: 15px;
+  line-height: 23px;
+  line-height: 100%;
+  text-align: center;
+  color: #676767;
+}
+
+
+
+/*...........TABS.................*/
+
+.tabla {
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 700px;
+}
+
+.tabsMenu {
+  display: flex;
+  margin: 1rem auto;
+  max-width: 400px;
+  transition: all 400ms ease;
+  justify-content: space-between;
+}
+
+.contenidoTabs {
+  text-align: center;
+}
+
+.contenidoTabs div {
+  text-align: center;
+  margin: 1rem auto;
+  position: absolute;
+  line-height: 1.8;
+  transition: all 600ms ease;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0.9);
+  padding: 5px;
+}
+
+.conHausme {
+  background-color: #3b0c88;
+  color: #fff;
+  margin-left: 15px;
+  width: 150px;
+  border-radius: 7px;
+  padding: 5px;
+  box-sizing: border-box;
+  border: 1px solid #efefef;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 15px;
+  text-align: center;
+}
+
+.sinHausme {
+  background: #ffffff;
+  color: #676767;
+  margin-right: 15px;
+  width: 150px;
+  border-radius: 7px;
+  padding: 5px;
+  box-sizing: border-box;
+  border: 1px solid #efefef;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 15px;
+  text-align: center;
+}
+
+.tabsTextos {
+  margin-left: 5px;
+  margin-top: 5px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  text-align: left;
+  color: #676767;
+}
+
+#radio1,
+#radio2 {
+  display: none;
+}
+
+#radio1:checked~.tab1 {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+
+#radio2:checked~.tab2 {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+
+/*...........SLIDER DE FRASES.................*/
+.slider {
+  width: 85%;
+  text-align: center;
+  overflow: hidden;
+  margin: 15px;
+  background-size: 100% 100%;
+  display: flex;
+
+}
+
+.slider ul {
+  display: flex;
+  animation: cambio 20s infinite linear;
+  width: 300%;
+}
+
+.slider li {
+  width: 100vw;
+  list-style: none;
+  padding: 0 20px;
+}
+
+.slider p {
+  width: 100%;
+  height: auto;
+  margin-left: 5px;
+  margin-right: 10px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  color: #676767;
+}
+
+.color {
+  background-color: #3b0c88;
+  color: #ffffff
+}
+
+.wapp {
+  position: fixed;
+  /* top: 0; */
+  right: 20px;
+  /* left:0; */
+  bottom: 120px;
+  text-align: center;
+}
+
+
+form>label {
+  margin-right: 270px;
+}
+
+#labelApto {
+  margin-right: 27px;
+}
+
+#labelCiudad {
+  margin-right: 120px;
+}
+
+/*...............FORMULARIO COTIZAR.............*/
+#form {
+  width: 100%;
+  /*max-width:450px;*/
+  margin: 15px auto;
+  padding: 5px;
+}
+
+.label {
+  font-family: Roboto;
+  font-style: SemiBold;
+  font-size: 13px;
+  line-height: 15px;
+  line-height: 100%;
+  text-align: Center;
+  vertical-align: Top;
+  fill: Solid;
+  color: #676767;
+  margin-left: 15px;
+}
+
+.label2 {
+  font-family: Roboto;
+  font-style: SemiBold;
+  font-size: 13px;
+  line-height: 15px;
+  line-height: 100%;
+  text-align: Center;
+  vertical-align: Top;
+  fill: Solid;
+  color: #676767;
+  margin-left: 25px;
+}
+
+.label3 {
+  font-family: Roboto;
+  font-style: SemiBold;
+  font-size: 13px;
+  line-height: 15px;
+  line-height: 100%;
+  text-align: Center;
+  vertical-align: Top;
+  fill: Solid;
+  color: #676767;
+  margin-left: 10px;
+}
+
+.button1 {
+  /*margin-left: 15px;*/
+  text-align: Inside;
+  width: 325px;
+  background: #ffffff;
+  color: #676767;
+  height: 30px;
+  border-radius: 7px;
+  padding: 5px;
+  box-sizing: border-box;
+  border: 1px solid #efefef;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.button2 {
+  /*margin-left: 15px;*/
+  text-align: Inside;
+  width: 158px;
+  background: #ffffff;
+  color: #676767;
+  height: 30px;
+  border-radius: 7px;
+  padding: 5px;
+  box-sizing: border-box;
+  border: 1px solid #efefef;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.button4 {
+  text-align: Inside;
+  width: 158px;
+  background: #ffffff;
+  color: #676767;
+  height: 30px;
+  border-radius: 7px;
+  padding: 5px;
+  box-sizing: border-box;
+  border: 1px solid #efefef;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.l1 {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: auto auto;
+}
+
+.l1Interno {
+  grid-column: 1 / 2;
+}
+
+.liInterno2 {
+  grid-column: 2 / 3;
+  grid-row: 1 /2;
+}
+
+#cotizacion {
+  margin: 20px auto;
+}
+
+.button3 {
+  background-color: #3b0c88;
+  color: #ffffff;
+  height: 40px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  width: 325px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  line-height: 15px;
+  text-align: center;
+}
+
+.mensaje {
+  margin-left: 40px;
+  display: none;
+  visibility: visible;
+  border-radius: 9px;
+  color: #00973c;
+  height: 100px;
+  width: 335px;
+  background-color: #cdffe1;
+  text-align: center;
+  justify-content: center;
+  margin-top: 10px;
+  padding-top: 5px;
+  text-align: Inside;
+}
+
+
+
+.mensaje2 {
+  display: none;
+  border-radius: 9px;
+  color: #7b68ee;
+  height: 35px;
+  font-size: 0.85rem;
+  width: 335px;
+  background-color: #b3ccfd;
+  text-align: center;
+  justify-content: center;
+
+  margin-top: 10px;
+  padding-top: 5px;
+  text-align: Inside;
+}
+
+/*.................FOOTER................*/
+#footer {
+  background-color: #3B0C88;
+  width: 100%;
+}
+
+.containerDivision {
+  display: grid;
+  grid-template-columns: auto auto;
+  place-items: left;
+  margin-bottom: 20px;
+}
+
+.contenedorSocialMedia {
+  text-align: left;
+  margin-left: 30px;
+}
+
+.logoContainer {
+  text-align: right;
+  margin-right: 30px;
+  color: #fff;
+  font-size: 13px;
+}
+
+i {
+  font-size: 25px;
+  margin: 0 5px 0 5px;
+}
+
+.icono {
+  color: white;
+  /*#3B0C88*/
+  text-decoration-line: none;
+}
+
+.containerFinal {
+  text-align: center;
+  color: #fff;
+  font-size: 13px;
+}
+
+#elementMsg {
+  margin-top: 5px;
+  font-size: 0.9rem;
+}
+
+.login {
+  text-align: center;
+  margin: 0 auto;
+}
+
+@media (min-width: 640px) {
+  .scrolling-wrapper-flexbox {
+    margin: 4rem auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    grid-auto-rows: auto;
+  }
+
+  .cir {
+    position: absolute;
+    z-index: 1;
+    top: 160vh;
+    margin-left: 370px;
+    visibility: hidden;
+  }
+
+  .efecDer {
+    position: absolute;
+    z-index: index 1;
+    top: 100vh;
+    margin-left: 370px;
+    visibility: hidden;
+  }
+
+  .efecIzq {
+    position: absolute;
+    z-index: 1;
+    top: 190vh;
+    margin-left: 0px;
+    visibility: hidden;
+  }
+}
+
+@media (min-width: 768px) {
+  #mediaMain {
+    display: grid;
+    /*place-items: left;*/
+    gap: 4rem;
+    grid-template-columns: auto auto;
+    width: 100%;
+    margin: 5rem auto;
+  }
+
+  .banner {
+    margin-bottom: -40%;
+  }
+
+  .containerNuestrosObjetivos {
+    margin: 3rem auto;
+    display: grid;
+    grid-template-columns: 55% auto;
+    align-items: center;
+  }
+
+  .login {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+  }
+
+  .scrolling-wrapper-flexbox {
+    margin: 4rem auto;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+}
+
+
+.visible {
+  display: block;
+  margin: 25px auto;
+}
+
+.invisible {
+  display: none;
+}
+
+
+/*inicio en orden de media queries*/
+@media(min-width:384px) {
+  #imgCuadradoAbsolute {
+    left: 7px;
+    width: 110px;
+  }
+}
+
+@media(min-width: 530px) {
+  #imgCuadradoAbsolute {
+    left: 284px;
+    top: 97px;
+  }
+}
+
+@media(min-width:768px) {
+  #imgCuadradoAbsolute {
+    top: 205px;
+    width: 110px;
+    left: 7px;
+  }
+}
+
+@media(min-width: 969px) {
+  #imgCuadradoAbsolute {
+    top: 176px;
+    left: 282px;
+  }
+}
+
+@media(min-width: 1006px) {
+  #imgCuadradoAbsolute {
+    display: none;
+  }
+}
+
+
+/*key frames*/
+
+@keyframes cambio {
+  to {
+    background-position: 100%;
+  }
+
+  0% {
+    margin-left: -10;
+  }
+
+  30% {
+    margin-left: -10;
+  }
+
+  35% {
+    margin-left: -104%;
+  }
+
+  70% {
+    margin-left: -104%;
+  }
+
+  75% {
+    margin-left: -204%;
+  }
+
+  90% {
+    margin-left: -204%;
+  }
+}
+
+@media screen {
+  #nuestrosObjetivos {
+    animation: Logo infinite 40s linear;
+    border-radius: 25%;
+  }
+}
+
+@keyframes Logo {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+
+}
+
+@media (min-width:1000px) {
+  #menu {
+    display: none;
+  }
+
+}

@@ -1,0 +1,45 @@
+
+
+.conatinerTituloRaya{
+  background-image:url('../Images/points.svg');
+  background-repeat:no-repeat;
+  background-position: right;
+  background-size:content;
+}
+
+.containerPorque{
+  background-image: url('../Images/bubbles.svg');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: content;
+  grid-column: auto auto;
+    
+}
+
+.bold{
+  font-size: 1.5rem;
+  color: #3b0c88;
+}
+
+.img{
+  margin-top: -10%;
+  background-image: url('../Images/points.svg');
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: content;
+  height: 90px;
+}
+
+
+
+@media(min-width:500px){
+  .containerPorque{
+    background-image:none;
+  }
+  .img{
+    background-image:none;
+  }
+  .conatinerTituloRaya{
+    background-image:none;
+  }
+}
